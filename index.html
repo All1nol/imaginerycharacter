@@ -1,15 +1,15 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 
-    <head>
-        <meta charset="UTF-8">
-        <title>My First Web Page</title>
-        <link rel="icon" href="capture_20220126104847170.bmp" type="image/x-icon">  
-        <link rel="stylesheet" href="main.css" type="text/css">
-        <style>
-            html {
-                font-size: 15px;
-            }
+<head>
+  <meta charset="UTF-8">
+  <title>My First Web Page</title>
+  <link rel="icon" href="capture_20220126104847170.bmp" type="image/x-icon">  
+  <link rel="stylesheet" href="main.css" type="text/css">
+   <style>
+    html {
+     font-size: 15px;
+    }
     
             body {
                 background-color: #333;
@@ -23,7 +23,7 @@
             </p>
             <!--html entity that creates-->
 
-    </head>
+</head>
 
     
      </main>
@@ -39,6 +39,9 @@
             <li>
                 <a href="#1stday">days</a>
             </li>
+            <li>
+                <a href="#contact">Contact me</a>
+            </li>
         </ul>
     
     </nav>
@@ -52,17 +55,16 @@
         <br>...There are a lot of <strong>stuff!</strong> <!--bold text-->
                 If you want download picture on the tab <a href="capture_20220126104847170.bmp" download>icon  
                 </a> 
-                    Contact me at <a href="xxxxxxxx@gmail.com"> my email address</a>
-                    Dial <a href="tel:+123456789" > my phone number</a>   
+                   <br> Contact me at <a href="xxxxxxxx@gmail.com"> my email address</a> 
+                 <br>     Dial <a href="tel:+123456789" > my birthday number</a>   
 </section>
 
    <hr>
+
    <section>
     <h3> <mark>2.day</mark> </h3>
     <img src="img/capture_20220126104847170.bmp" alt="HTML5 Logo" title="I am learning html" width="180">
-    <figcaption>
-        Kamikaze
-    </figcaption>
+    
 
    <p><input type="text">write what you want
  <p>  <input type="password"> password </p>
@@ -86,7 +88,7 @@
     <tbody>
         <tr>
             <td>
-                <time datetime="08:00">8am</time>-<time datetime="9:00">9am</time>
+                <time datetime="08:00">8am</time>-<time datetime="09:00">9am</time>
             </td>
             <td>Learn html</td>
         </tr>
@@ -122,6 +124,138 @@
     </table>
     <p> ........</p>
 </section>
-</body>
 
+
+
+<section>
+    <h2> <mark>3.day</mark>  </h2>
+   <!--
+ <li>
+     <a href="#contact">Contact me</a>
+ </li>
+    -->
+      
+    <hr>
+    <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I will response you during the day</p>
+
+    <form action="https://httpbin.org/get" method="get">
+       <fieldset>
+           <legend>Personal Information</legend>
+        <p>
+        <label for="Firstname">Firstname:</label>
+        <input type="text" name="Firstname" id="Firstname" placeholder="Sena" autocomplete="on" required autofocus>
+        </p>
+
+        <p>
+        <label for="Lastname">Lastname:</label>
+        <input type="text" name="Lastname" id="Lastname" placeholder="Brown" autocomplete="on" required >
+        </p>
+
+        <p>
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password" placeholder="sshh" autocomplete="on" required >
+        </p>
+
+        <p>
+        <label for="phone1">phone:</label>
+        <input type="tel" name="phone1" id="phone1" placeholder="111-111-1111"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{}" autocomplete="on" required >
+        </p>
+        
+        <p>
+        <label for="phone">phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="111-111-1111"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{}" autocomplete="on" required >
+        </p>
+
+        <p>
+        <label for="birthday">birthday:</label>
+        <input type="number" name="birthday" id="birthday" min="1950" max="2010" step="1" value="1980" >
+        </p>
+
+        <p>
+
+        </p>
+        <p>
+            <label for="language">Favorite Programming language</label>
+            <select name="language" id="language">
+                <optgroup label="C family">
+                <option value="c family">c++</option>
+                <option value="c family">c#</option>
+                <option value="c family">c</option>
+                </optgroup>
+              
+                <optgroup label="Web development">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                </optgroup>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="language1">Favorite Programming language</label>
+            <input type="text" name="language1" id="language1" list="language-list">
+            <datalist id="language-list">
+        <option value="c++" >
+        <option value="c#" >
+        <option value="c" >
+        <option value="html" >
+        <option value="css" >
+
+        </datalist>
+ </fieldset>
+          
+    
+              <br>
+              <fieldset>
+                 <legend>What is your favorite operating system </legend>
+                 <p>
+                    <input type="radio" name="operating system" id="Windows" value="Windows">
+                    <label for="Windows">Windows</label>
+                 </p>
+                 <p>
+                    <input type="radio" name="operating system" id="IOS" value="IOS">
+                    <label for="IOS">IOS</label>
+                 </p>
+                 <p>
+                    <input type="radio" name="operating system" id="Ubuntu" value="Ubuntu">
+                    <label for="Ubuntu">Ubuntu</label>
+                 </p>
+              </fieldset>
+              <br>
+        <fieldset>
+                <legend>Which social media do you use more?</legend>
+                <p>
+                    <input type="checkbox" name="social media" id="youtube" value="youtube">
+                    <label for="youtube">Youtube</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="social media" id="Insta" value="Insta">
+                    <label for="Insta">Instagram</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="social media" id="Twitter" value="Twitter">
+                    <label for="Twitter">Twitter</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send me a note</legend>
+                <label for="message">Your message</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+            </fieldset>
+            <br>
+            <button type= "submit" >submit</button> 
+            <button type="submit"   formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset" >reset</button>
+        </form>     
+    </article>
+    
+</section>
+
+</body>
 </html>
