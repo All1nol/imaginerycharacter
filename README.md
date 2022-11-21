@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @All1nol
+- 👋 Hi, I’m @Omar
 - 👀 I’m interested in Web2, Web3 and ethical hacking
 - 🌱 I’m currently learning C++ and Html( planning to learn css and javascript after html)
 - 📫 How to reach me: 
